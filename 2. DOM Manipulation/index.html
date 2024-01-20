@@ -39,14 +39,17 @@
 
         // Todo 2.2 Set the text of the second list item to "IT102 - Python Fundamentals"
         // Resource: https://www.javascripttutorial.net/javascript-dom/javascript-get-child-element/
-
+        let firstChild = unorderedList.children[1]; 
+        firstChild.textContent="IT102";
         // Checkpoint 3.2 What is the difference between innerText, textContent, and innerHTML. When should you use one over the other?
         // Answer:
 
         // Todo 2.3 Create another list item, and add it as a child of the unordered list
         //          Set the text of the list item to your favorite subject
         // Resource: https://www.javascripttutorial.net/dom/manipulating/create-a-dom-element/
-
+        const e = document.createElement('li');
+        e.innerHTML = 'JavaScript DOM';
+        unorderedList.appendChild(e);
         // Todo 2.4 Set the id attribute of the list item you created to "favorite-subject".
         //          Set the class of the list item to "newly-created"
 
